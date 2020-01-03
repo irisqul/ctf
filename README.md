@@ -8,3 +8,6 @@ some reports about codelabs, wargames and CTF
 
 1. File Upload XSS
 ```
+Upload a file with name “><img src=1 onerror=alert(document.domain)>’ brute.jpeg
+```
+tool to try different file upload path [w3schools](https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_fileupload_value)
