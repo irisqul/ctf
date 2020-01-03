@@ -1,0 +1,15 @@
+https://ctf.hacker101.com/ctf
+
+## Micro-CMS v1
+
+1. Frobidden page
+
+Url is formed by adding a page number at the end like page/1
+By checking range between 1st page and the page-id I got by creating a new one, I found that one of the pages is forbidden
+But the page could still be downloaded, if we try the other path - url for editing page,which is /page/edit/forbiddenId
+
+2. Stored XSS
+
+Change the title of a page to add some script, like </a> <script>alert(1)</script><a>
+The title is sanitized at the "page" page, but if I go back to home srcreen, the script works
+
